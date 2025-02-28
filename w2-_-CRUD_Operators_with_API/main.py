@@ -1,7 +1,7 @@
 import requests
 from API_KEY import API_KEY
 
-URL = f"https://newsapi.org/v2/everything?domains=wsj.com&apiKey={API_KEY}" 
+URL = f"https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey={API_KEY}" 
 
 def fetch_news(*args):
     list_of_news = []
@@ -16,7 +16,19 @@ def fetch_news(*args):
             news_item = [id]
 
             for field in args:
-                news_item.append(article.get(field, f"No info for '{field}'"))
+                if field in article or field in article.get("source", {}):
+
+                    if field == 'source':
+                        news_item.extend([value for value in article.get("source", {}).values()])
+
+                    elif field == 'id' or field == 'name':
+                        for k, v in article.get("source").items():
+                            if k == field:
+                                news_item.append(v)
+
+                    else:
+                        news_item.append(article.get(field, f"No info for '{field}'"))
+
 
             list_of_news.append(news_item)
 
