@@ -1,4 +1,3 @@
-# class.py
 class BaseClub:
     def __init__(self, club_name, country, founded_year, colors, fans_group):
         self.club_name = club_name

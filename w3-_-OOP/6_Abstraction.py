@@ -16,7 +16,7 @@ class Scout(TeamMember):
     def role_description(self):
         return f"{self.name} is responsible for finding new talents."
 
-# Test
+
 if __name__ == "__main__":
     coach = Coach("Ole Gunnar Solskjaer")
     scout = Scout("Eduard Graf")
