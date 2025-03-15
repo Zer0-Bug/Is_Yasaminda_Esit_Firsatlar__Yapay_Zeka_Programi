@@ -1,0 +1,14 @@
+Data Set Content:
+
+PassengerId: Passenger ID
+Survived: 0 = No, 1 = Yes
+Pclass: Ticket class (1, 2, 3)
+Name: Passenger name
+Sex: Gender
+Age
+SibSp: Number of siblings/spouses on board
+Parch: Number of parents/children on board
+Ticket: Ticket number
+Mouse: Ticket fee
+Cabin: Cabin number
+Embarked: Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton)
