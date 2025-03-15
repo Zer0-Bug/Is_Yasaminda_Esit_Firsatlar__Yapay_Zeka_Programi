@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('1_train.csv')
+df = pd.read_csv('1.0_train.csv')
 
 # Histogram of age distribution
 plt.figure(figsize=(10, 6))

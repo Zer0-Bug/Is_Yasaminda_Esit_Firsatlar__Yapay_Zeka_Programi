@@ -5,7 +5,7 @@ This file standardizes numerical data (mean = 0, standard deviation = 1).
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
-df = pd.read_csv('1_train.csv')
+df = pd.read_csv('1.0_train.csv')
 
 print(df.head())
 

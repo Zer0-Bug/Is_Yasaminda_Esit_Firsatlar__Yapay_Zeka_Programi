@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 
-df = pd.read_csv('2_train.csv')
+df = pd.read_csv('2.0_train.csv')
 
 print("Original Data (First 5 rows):")
 print(df[['Id', 'LotFrontage', 'GarageCars', 'LotArea', 'GrLivArea', 'SalePrice']].head())

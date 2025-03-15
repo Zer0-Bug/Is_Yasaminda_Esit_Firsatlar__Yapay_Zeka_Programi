@@ -7,7 +7,7 @@ import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 
 
-df = pd.read_csv('1_train.csv')
+df = pd.read_csv('1.0_train.csv')
 
 print(df.head())
 
